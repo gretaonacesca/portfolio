@@ -1,0 +1,419 @@
+.fjord-page {
+  background: var(--bg-light);
+  min-height: 100svh;
+}
+
+.back-link-dark {
+  color: var(--card-text);
+}
+
+/* Hero */
+.fjord-hero {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 16px;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Intro */
+.fjord-intro {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.fjord-intro-text {
+  flex: 0 0 354px;
+  background: var(--bg-dark);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.fjord-intro-text h1 {
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--text-on-dark);
+  margin-bottom: 20px;
+}
+
+.fjord-intro-text p {
+  font-family: var(--body-font);
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-on-dark);
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fjord-intro-img {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Design process */
+.fjord-process {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.fjord-process-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fjord-process-label {
+  font-size: 36px;
+  color: var(--card-text);
+  text-align: right;
+}
+
+.fjord-process-label-left {
+  text-align: left;
+}
+
+.fjord-process-img {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 970px;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.fjord-process-img-wide {
+  max-width: 1093px;
+}
+
+/* Branding */
+.fjord-branding {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.fjord-branding-text {
+  flex: 0 0 354px;
+  background: var(--bg-dark);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.fjord-branding-text h2 {
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--text-on-dark);
+  margin-bottom: 20px;
+}
+
+.fjord-branding-text p {
+  font-family: var(--body-font);
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-on-dark);
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fjord-branding-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 261px auto auto;
+  gap: 16px;
+  min-width: 0;
+}
+
+.fjord-brand-img {
+  border-radius: 20px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.fjord-brand-truck {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.fjord-brand-wheels {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.fjord-brand-fjord {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.fjord-brand-logo {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.fjord-brand-coral {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.fjord-color-swatches {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  display: flex;
+  gap: 16px;
+}
+
+.fjord-swatch {
+  flex: 1;
+  height: 107px;
+  border-radius: 107px;
+}
+
+/* Handover notes */
+.fjord-handover {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.fjord-handover-img {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  min-width: 0;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.fjord-handover-text {
+  flex: 0 0 354px;
+  background: var(--bg-dark);
+  border-radius: 20px;
+  padding: 24px 28px;
+  color: var(--text-on-dark);
+}
+
+.fjord-handover-text h2 {
+  font-size: 36px;
+  line-height: 1.5;
+  color: var(--text-on-dark);
+  margin-bottom: 20px;
+}
+
+.fjord-handover-text h4 {
+  font-family: var(--body-font);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  color: var(--text-on-dark);
+  margin-top: 16px;
+}
+
+.fjord-handover-text ul {
+  list-style: disc;
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+
+.fjord-handover-text li {
+  font-family: var(--body-font);
+  font-size: 20px;
+  line-height: 40px;
+  color: var(--text-on-dark);
+}
+
+/* Bottom - Lessons */
+.fjord-bottom {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.fjord-lessons {
+  flex: 0 0 354px;
+  background: var(--bg-dark);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.fjord-lessons h2 {
+  font-size: 36px;
+  line-height: 1.5;
+  color: var(--text-on-dark);
+  margin-bottom: 20px;
+}
+
+.fjord-lessons p {
+  font-family: var(--body-font);
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-on-dark);
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fjord-lessons-img {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  min-width: 0;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .fjord-intro {
+    flex-direction: column;
+  }
+
+  .fjord-intro-text {
+    flex: 1;
+  }
+
+  .fjord-branding {
+    flex-direction: column;
+  }
+
+  .fjord-branding-text {
+    flex: 1;
+  }
+
+  .fjord-handover {
+    flex-direction: column;
+  }
+
+  .fjord-handover-text {
+    flex: 1;
+  }
+
+  .fjord-bottom {
+    flex-direction: column;
+  }
+
+  .fjord-lessons {
+    flex: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .fjord-branding-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .fjord-brand-truck {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .fjord-brand-wheels {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .fjord-brand-fjord {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  .fjord-brand-logo {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .fjord-brand-coral {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .fjord-color-swatches {
+    grid-column: 1 / 3;
+    grid-row: 4;
+  }
+
+  .fjord-swatch {
+    height: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .fjord-intro-text h1,
+  .fjord-branding-text h2 {
+    font-size: 36px;
+  }
+
+  .fjord-intro-text p,
+  .fjord-branding-text p,
+  .fjord-lessons p,
+  .fjord-handover-text li,
+  .fjord-handover-text h4 {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .fjord-process-label,
+  .fjord-handover-text h2,
+  .fjord-lessons h2 {
+    font-size: 28px;
+  }
+
+  .fjord-branding-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fjord-brand-truck,
+  .fjord-brand-wheels,
+  .fjord-brand-fjord,
+  .fjord-brand-logo,
+  .fjord-brand-coral,
+  .fjord-color-swatches {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}

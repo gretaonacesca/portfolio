@@ -1,0 +1,522 @@
+.home-page {
+  background: var(--bg-dark);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ── Header ── */
+.home-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  width: 100%;
+  max-width: 1216px;
+  padding: 27px 0 0;
+  flex-wrap: wrap;
+}
+
+.home-greeting {
+  font-family: var(--heading-font);
+  font-size: 36px;
+  color: var(--text-on-dark);
+  letter-spacing: -1.08px;
+  white-space: nowrap;
+}
+
+.home-tagline {
+  font-family: var(--body-font);
+  font-size: 32px;
+  color: var(--text-on-dark);
+  line-height: 1;
+}
+
+/* ══════════════════════════════════
+   Desktop bento – absolute layout
+   Faithfully matches Figma at ≥1280
+   ══════════════════════════════════ */
+.bento-grid {
+  position: relative;
+  width: 100%;
+  max-width: 1216px;
+  height: 675px;
+  margin-top: 26px;
+}
+
+.bento-card {
+  position: absolute;
+  background: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: filter 0.2s;
+}
+
+.bento-card:hover {
+  filter: brightness(0.96);
+}
+
+/* ── Früh Genug – col 1, full height ── */
+.bento-fruh {
+  left: 0;
+  top: 0;
+  width: 230px;
+  height: 555px;
+  padding: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.bento-fruh-content {
+  position: relative;
+  z-index: 2;
+}
+
+.bento-fruh-content h2 {
+  font-family: var(--heading-font);
+  font-size: 36px;
+  line-height: 40px;
+  color: var(--card-text);
+  margin-bottom: 8px;
+}
+
+.bento-fruh-content p {
+  font-family: var(--body-font);
+  font-size: 32px;
+  line-height: normal;
+  color: var(--card-text);
+}
+
+.bento-fruh-gradient {
+  position: absolute;
+  inset: 0;
+  top: 32%;
+  border-radius: 20px;
+  background: linear-gradient(159deg, rgba(17, 31, 46, 0) 20%, #111f2e 45%);
+  z-index: 1;
+}
+
+/* ── Stat cards – row 1, cols 2-3 ── */
+.bento-stat {
+  cursor: default;
+}
+
+.bento-stat:hover {
+  filter: none;
+}
+
+.bento-stat-projects {
+  left: 246px;
+  top: 0;
+  width: 354px;
+  height: 222px;
+}
+
+.bento-stat-fluff {
+  left: 616px;
+  top: 0;
+  width: 354px;
+  height: 222px;
+}
+
+.bento-stat-number {
+  font-family: var(--heading-font);
+  font-size: 36px;
+  color: var(--card-text);
+  display: block;
+}
+
+.bento-stat-label {
+  font-family: var(--heading-font);
+  font-size: 36px;
+  color: var(--card-text);
+  display: block;
+}
+
+/* ── Contact – col 4, row 1 ── */
+.bento-contact {
+  left: 986px;
+  top: 0;
+  width: 230px;
+  height: 105px;
+}
+
+/* ── Fjord Freight – col 4, rows 2-3 ── */
+.bento-fjord {
+  left: 986px;
+  top: 120px;
+  width: 230px;
+  height: 555px;
+  padding: 24px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.bento-fjord-gradient {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(to top, rgba(212, 216, 237, 0) 0%, rgba(42, 194, 148, 0.7) 69%);
+  z-index: 1;
+}
+
+.bento-fjord-content {
+  position: relative;
+  z-index: 2;
+}
+
+.bento-fjord-content h2 {
+  font-family: var(--heading-font);
+  font-size: 36px;
+  color: var(--card-text);
+  margin-bottom: 8px;
+}
+
+.bento-fjord-content p {
+  font-family: var(--body-font);
+  font-size: 32px;
+  line-height: normal;
+  color: var(--card-text);
+}
+
+/* ── About – col 1, bottom ── */
+.bento-about {
+  left: 0;
+  top: 571px;
+  width: 230px;
+  height: 103px;
+}
+
+/* ── Nav cards shared ── */
+.bento-nav {
+  font-family: var(--heading-font);
+  font-size: 36px;
+  color: var(--card-text);
+}
+
+/* ── Center background rect ── */
+.bento-center-bg {
+  position: absolute;
+  left: 246px;
+  top: 237px;
+  width: 724px;
+  height: 438px;
+  background: var(--card-bg);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+/* ── Portrait – overlapping center ── */
+.bento-portrait-wrapper {
+  position: absolute;
+  left: 345px;
+  top: -12px;
+  width: 459px;
+  height: 688px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.bento-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ── Decorative floating images ── */
+.bento-float {
+  position: absolute;
+  pointer-events: none;
+  z-index: 4;
+}
+
+/* Früh Genug screenshots on the left card */
+.bento-fruh-chart {
+  left: 50px;
+  top: 395px;
+  width: 180px;
+  border-radius: 20px;
+  z-index: 4;
+}
+
+.bento-fruh-progress {
+  left: -32px;
+  top: 303px;
+  width: 187px;
+  z-index: 4;
+}
+
+/* Floating screenshots over center portrait area */
+.bento-fruh-chart2 {
+  left: 259px;
+  top: 165px;
+  width: 120px;
+  border-radius: 10px;
+  box-shadow: -9px -8px 26px rgba(0, 0, 0, 0.25), 5px 6px 12px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+.bento-fruh-toolbar {
+  left: 269px;
+  top: 264px;
+  width: 211px;
+  border-radius: 10px;
+  box-shadow: -6px -6px 32px rgba(0, 0, 0, 0.25), 5px 6px 12px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+.bento-fjord-rotated {
+  left: 727px;
+  top: 302px;
+  width: 290px;
+  height: 126px;
+  border-radius: 20px;
+  box-shadow: 7px 6px 17px rgba(0, 0, 0, 0.25);
+  transform: rotate(-90deg);
+  z-index: 5;
+}
+
+/* Fjord Freight screenshots on/near the right card */
+.bento-fjord-mockup {
+  left: 986px;
+  top: 444px;
+  width: 271px;
+  box-shadow: 7px -19px 38px rgba(42, 194, 148, 0.25), 8px 7px 15px rgba(42, 194, 148, 0.25);
+  z-index: 5;
+}
+
+.bento-fjord-small1 {
+  left: 1180px;
+  top: 386px;
+  width: 85px;
+  border-radius: 10px;
+  box-shadow: -5px -2px 18px rgba(42, 194, 148, 0.25), 5px 4px 17px rgba(42, 194, 148, 0.25);
+  z-index: 6;
+}
+
+.bento-fjord-small2 {
+  left: 1242px;
+  top: 437px;
+  width: 75px;
+  border-radius: 10px;
+  box-shadow: -5px -2px 18px rgba(42, 194, 148, 0.25), 5px 4px 17px rgba(42, 194, 148, 0.25);
+  z-index: 6;
+}
+
+
+/* ══════════════════════════════════
+   Responsive: ≤1280px → CSS Grid
+   ══════════════════════════════════ */
+@media (max-width: 1280px) {
+  .home-page {
+    padding: 20px;
+  }
+
+  .home-header {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+    height: auto;
+    position: static;
+  }
+
+  .bento-card {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+  }
+
+  .bento-center-bg {
+    display: none;
+  }
+
+  .bento-fruh {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    min-height: 400px;
+  }
+
+  .bento-stat-projects {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 180px;
+  }
+
+  .bento-stat-fluff {
+    grid-column: 3;
+    grid-row: 1;
+    min-height: 180px;
+  }
+
+  .bento-contact {
+    grid-column: 3;
+    grid-row: 2;
+    min-height: 100px;
+  }
+
+  .bento-about {
+    grid-column: 2;
+    grid-row: 2;
+    min-height: 100px;
+  }
+
+  .bento-portrait-wrapper {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+    min-height: 400px;
+  }
+
+  .bento-portrait {
+    border-radius: 20px;
+  }
+
+  .bento-fjord {
+    grid-column: 3;
+    grid-row: 3 / 5;
+    min-height: 400px;
+  }
+
+  .bento-fjord-rotated,
+  .bento-fruh-chart2,
+  .bento-fruh-toolbar,
+  .bento-fjord-mockup,
+  .bento-fjord-small1,
+  .bento-fjord-small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .home-greeting {
+    font-size: 28px;
+  }
+
+  .home-tagline {
+    font-size: 22px;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bento-fruh {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 280px;
+  }
+
+  .bento-stat-projects {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 140px;
+  }
+
+  .bento-stat-fluff {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 140px;
+  }
+
+  .bento-contact {
+    grid-column: 2;
+    grid-row: 2;
+    min-height: 90px;
+  }
+
+  .bento-portrait-wrapper {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    min-height: 350px;
+  }
+
+  .bento-fjord {
+    grid-column: 1;
+    grid-row: 4;
+    min-height: 280px;
+  }
+
+  .bento-about {
+    grid-column: 2;
+    grid-row: 4;
+    min-height: 90px;
+  }
+
+  .bento-fruh-content h2,
+  .bento-fjord-content h2 {
+    font-size: 28px;
+  }
+
+  .bento-fruh-content p,
+  .bento-fjord-content p {
+    font-size: 22px;
+  }
+
+  .bento-stat-number,
+  .bento-stat-label,
+  .bento-nav {
+    font-size: 28px;
+  }
+
+  .bento-fruh-chart,
+  .bento-fruh-progress {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-fruh,
+  .bento-stat-projects,
+  .bento-stat-fluff,
+  .bento-contact,
+  .bento-portrait-wrapper,
+  .bento-fjord,
+  .bento-about {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .bento-stat-projects,
+  .bento-stat-fluff {
+    min-height: 120px;
+  }
+
+  .bento-contact,
+  .bento-about {
+    min-height: 80px;
+  }
+
+  .bento-portrait-wrapper {
+    min-height: 300px;
+  }
+}
