@@ -3,6 +3,11 @@
   min-height: 100svh;
 }
 
+.fjord-page .page {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .project-pager {
   display: flex;
   justify-content: center;
@@ -92,11 +97,15 @@
 .fjord-intro-img {
   flex: 1;
   min-width: 0;
+  height: 950px;
   overflow: hidden;
 
   img {
     width: 100%;
-    height: 100%;
+    height: 1000px;
+    overflow: hidden;
+    margin-top: -40px;
+    margin-bottom: -40px;
     object-fit: cover;
   }
 }
@@ -138,27 +147,78 @@
   }
 }
 
+.fjord-process-img-lowfi {
+  max-width: 600px;
+  margin-left: auto;
+}
+
+.fjord-lowfi-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.fjord-lowfi-gifs {
+  flex: 1;
+  min-height: 430px;
+  position: relative;
+}
+
+.fjord-lowfi-gif {
+  position: absolute;
+  width: 182px;
+  border-radius: 8px;
+}
+
+.fjord-lowfi-gif-a {
+  left: 100px;
+  top: 300px;
+  width: 300px;
+}
+
+.fjord-lowfi-gif-b {
+  left: 150px;
+  top: 600px;
+  width: 300px;
+}
+
+.fjord-lowfi-gif-c {
+  left: 0;
+  top: 350px;
+  width: 300px;
+}
+
 .fjord-process-img-wide {
-  max-width: 1093px;
+  max-width: none;
+  width: 100%;
+}
+
+.fjord-process > .fjord-process-item:nth-child(2) .fjord-process-img-wide {
+  height: 1550px;
 }
 
 /* Branding */
 .fjord-branding {
   display: flex;
+  flex-direction: row-reverse;
   gap: 16px;
   margin-bottom: 40px;
+  align-items: flex-start;
 }
 
 .fjord-branding-text {
   flex: 0 0 354px;
   background: var(--bg-dark);
   border-radius: 20px;
-  padding: 32px;
+  height: 620px;
+  padding: 20px 15px;
+  box-sizing: border-box;
 }
 
 .fjord-branding-text h2 {
   font-size: 48px;
   line-height: 1.5;
+  height: 40px;
   color: var(--text-on-dark);
   margin-bottom: 20px;
 }
@@ -170,16 +230,20 @@
   color: var(--text-on-dark);
   margin-bottom: 20px;
 
+  &:first-of-type {
+    height: 240px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
 }
 
 .fjord-branding-grid {
-  flex: 1;
+  flex: 0 0 846px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 261px auto auto;
+  grid-template-columns: 353px 230px 231px;
+  grid-template-rows: 261px 224px 107px;
   gap: 16px;
   min-width: 0;
 }
@@ -212,15 +276,16 @@
 
 .fjord-brand-logo {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 2 / 4;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 0;
 
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -230,7 +295,7 @@
 }
 
 .fjord-color-swatches {
-  grid-column: 1 / 4;
+  grid-column: 2 / 4;
   grid-row: 3;
   display: flex;
   gap: 16px;
@@ -272,6 +337,7 @@
 .fjord-handover-text h2 {
   font-size: 36px;
   line-height: 1.5;
+  height: 120px;
   color: var(--text-on-dark);
   margin-bottom: 20px;
 }

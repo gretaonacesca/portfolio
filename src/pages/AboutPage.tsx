@@ -48,9 +48,14 @@ export default function AboutPage() {
             <div className="about-portrait">
               <img src={portraitImg} alt="Greta Toth" />
             </div>
-            <Link to="/" className="about-btn">
+            <a
+              href="https://gretaonacesca.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-btn"
+            >
               other works
-            </Link>
+            </a>
             <a
               href="/pdfs/Greta%20Panna%20Toth_CV.pdf"
               target="_blank"

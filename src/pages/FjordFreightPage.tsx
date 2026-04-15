@@ -11,6 +11,9 @@ import brandCoral from '../assets/fjord-freight/brand-coral.png'
 import brandFjordPhoto from '../assets/fjord-freight/brand-fjord-photo.png'
 import dashboardDetail from '../assets/fjord-freight/dashboard-detail.png'
 import logoVector from '../assets/fjord-freight/logo-vector.svg'
+import wireframeEvo1 from '../assets/fjord-freight/wireframe-evo-1.gif'
+import wireframeEvo2 from '../assets/fjord-freight/wireframe-evo-2.gif'
+import wireframeEvo3 from '../assets/fjord-freight/wireframe-evo-3.gif'
 import './FjordFreightPage.css'
 
 export default function FjordFreightPage() {
@@ -47,31 +50,6 @@ export default function FjordFreightPage() {
           </div>
           <div className="fjord-intro-img">
             <img src={dashboardDetail} alt="Dashboard detail view" />
-          </div>
-        </section>
-
-        <section className="fjord-process">
-          <div className="fjord-process-item">
-            <h3 className="fjord-process-label">Low Fidelity Sketch</h3>
-            <div className="fjord-process-img">
-              <img src={lofiSketch} alt="Low fidelity sketch" />
-            </div>
-          </div>
-
-          <div className="fjord-process-item">
-            <h3 className="fjord-process-label fjord-process-label-left">
-              Mid Fidelity Wireframes
-            </h3>
-            <div className="fjord-process-img fjord-process-img-wide">
-              <img src={midfiWireframe} alt="Mid fidelity wireframe" />
-            </div>
-          </div>
-
-          <div className="fjord-process-item">
-            <h3 className="fjord-process-label">High Fidelity Mockup</h3>
-            <div className="fjord-process-img fjord-process-img-wide">
-              <img src={hifiMockup} alt="High fidelity mockup" />
-            </div>
           </div>
         </section>
 
@@ -114,6 +92,38 @@ export default function FjordFreightPage() {
               <div className="fjord-swatch" style={{ background: 'var(--hydrogen-teal)' }} />
               <div className="fjord-swatch" style={{ background: 'var(--ev-blue)' }} />
               <div className="fjord-swatch" style={{ background: 'var(--navy)' }} />
+            </div>
+          </div>
+        </section>
+
+        <section className="fjord-process">
+          <div className="fjord-process-item">
+            <h3 className="fjord-process-label">Low Fidelity Sketch</h3>
+            <div className="fjord-lowfi-layout">
+              <div className="fjord-lowfi-gifs" aria-label="Wireframe evolution snippets">
+                <img src={wireframeEvo1} alt="Wireframe evolution snippet 1" className="fjord-lowfi-gif fjord-lowfi-gif-a" />
+                <img src={wireframeEvo2} alt="Wireframe evolution snippet 2" className="fjord-lowfi-gif fjord-lowfi-gif-b" />
+                <img src={wireframeEvo3} alt="Wireframe evolution snippet 3" className="fjord-lowfi-gif fjord-lowfi-gif-c" />
+              </div>
+              <div className="fjord-process-img fjord-process-img-lowfi">
+                <img src={lofiSketch} alt="Low fidelity sketch" />
+              </div>
+            </div>
+          </div>
+
+          <div className="fjord-process-item">
+            <h3 className="fjord-process-label fjord-process-label-left">
+              Mid Fidelity Wireframes
+            </h3>
+            <div className="fjord-process-img fjord-process-img-wide">
+              <img src={midfiWireframe} alt="Mid fidelity wireframe" />
+            </div>
+          </div>
+
+          <div className="fjord-process-item">
+            <h3 className="fjord-process-label">High Fidelity Mockup</h3>
+            <div className="fjord-process-img fjord-process-img-wide">
+              <img src={hifiMockup} alt="High fidelity mockup" />
             </div>
           </div>
         </section>

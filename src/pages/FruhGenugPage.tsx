@@ -6,6 +6,10 @@ import midfiWireframe from '../assets/fruh-genug/midfi-wireframe.png'
 import hifiMockup from '../assets/fruh-genug/hifi-mockup.png'
 import roadmap from '../assets/fruh-genug/roadmap.png'
 import heroGrouped from '../assets/fruh-genug/hero-grouped.png'
+import failingSystemDiagram from '../assets/fruh-genug/failing-system-diagram.png'
+import wireframeEvo1 from '../assets/fruh-genug/wireframe-evo-1.gif'
+import wireframeEvo2 from '../assets/fruh-genug/wireframe-evo-2.gif'
+import wireframeEvo3 from '../assets/fruh-genug/wireframe-evo-3.gif'
 import './FruhGenugPage.css'
 
 export default function FruhGenugPage() {
@@ -65,6 +69,17 @@ export default function FruhGenugPage() {
           </div>
         </section>
 
+        <section
+          className="fruh-intro-diagram"
+          aria-label="Populations the system fails and why"
+        >
+          <img
+            src={failingSystemDiagram}
+            alt='Diagram: “The people the system is failing — and why,” mapping four groups—isolated elderly adults, severe mental illness, newly arrived immigrants, and homeless residents—to failure modes and data signals.'
+            className="fruh-intro-diagram-image"
+          />
+        </section>
+
         <section className="fruh-research">
           <div className="fruh-research-card">
             <h2>Research Methodology</h2>
@@ -81,34 +96,65 @@ export default function FruhGenugPage() {
               of navigating psychiatric care.
             </p>
           </div>
-          <div className="fruh-research-placeholder" />
+          <div className="fruh-research-embed">
+            <iframe
+              className="fruh-research-embed-frame"
+              src="https://fruehgenug.vercel.app"
+              title="Frueh Genug live demo"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+            <p className="fruh-research-embed-fallback">
+              If the embedded view is blocked, open the live site directly:{' '}
+              <a
+                href="https://fruehgenug.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                fruehgenug.vercel.app
+              </a>
+            </p>
+          </div>
         </section>
 
         <section className="fruh-process">
           <div className="fruh-process-item">
-            <h3 className="fruh-process-label fruh-process-label-right">
-              Low Fidelity Sketch
-            </h3>
-            <div className="fruh-process-img fruh-process-img-lowfi">
-              <img src={lofiSketch} alt="Low fidelity sketch" />
+            <div className="fruh-process-graphic">
+              <h3 className="fruh-process-caption fruh-process-caption-tr">
+                Low Fidelity Sketch
+              </h3>
+              <div className="fruh-lowfi-layout">
+                <div className="fruh-lowfi-gifs" aria-label="Wireframe evolution snippets">
+                  <img src={wireframeEvo1} alt="Wireframe evolution snippet 1" className="fruh-lowfi-gif fruh-lowfi-gif-a" />
+                  <img src={wireframeEvo2} alt="Wireframe evolution snippet 2" className="fruh-lowfi-gif fruh-lowfi-gif-b" />
+                  <img src={wireframeEvo3} alt="Wireframe evolution snippet 3" className="fruh-lowfi-gif fruh-lowfi-gif-c" />
+                </div>
+                <div className="fruh-process-img fruh-process-img-lowfi">
+                  <img src={lofiSketch} alt="Low fidelity sketch" />
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="fruh-process-item">
-            <h3 className="fruh-process-label fruh-process-label-left">
-              Mid Fidelity Wireframe
-            </h3>
-            <div className="fruh-process-img fruh-process-img-wide">
-              <img src={midfiWireframe} alt="Mid fidelity wireframe" />
+            <div className="fruh-process-graphic">
+              <h3 className="fruh-process-caption fruh-process-caption-tl">
+                Mid Fidelity Wireframe
+              </h3>
+              <div className="fruh-process-img fruh-process-img-wide">
+                <img src={midfiWireframe} alt="Mid fidelity wireframe" />
+              </div>
             </div>
           </div>
 
           <div className="fruh-process-item">
-            <h3 className="fruh-process-label fruh-process-label-right">
-              High Fidelity Mockup
-            </h3>
-            <div className="fruh-process-img fruh-process-img-wide">
-              <img src={hifiMockup} alt="High fidelity mockup" />
+            <div className="fruh-process-graphic">
+              <h3 className="fruh-process-caption fruh-process-caption-tr">
+                High Fidelity Mockup
+              </h3>
+              <div className="fruh-process-img fruh-process-img-wide">
+                <img src={hifiMockup} alt="High fidelity mockup" />
+              </div>
             </div>
           </div>
         </section>
@@ -130,9 +176,13 @@ export default function FruhGenugPage() {
           </div>
 
           <div className="fruh-roadmap">
-            <h3>Future Roadmap</h3>
-            <div className="fruh-roadmap-img">
-              <img src={roadmap} alt="Future roadmap" />
+            <div className="fruh-roadmap-graphic">
+              <h3 className="fruh-roadmap-caption fruh-roadmap-caption-tr">
+                Future Roadmap
+              </h3>
+              <div className="fruh-roadmap-img">
+                <img src={roadmap} alt="Future roadmap" />
+              </div>
             </div>
           </div>
         </section>
