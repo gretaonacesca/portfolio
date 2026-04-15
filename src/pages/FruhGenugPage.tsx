@@ -141,7 +141,7 @@ export default function FruhGenugPage() {
               <h3 className="fruh-process-caption fruh-process-caption-tl">
                 Mid Fidelity Wireframe
               </h3>
-              <div className="fruh-process-img fruh-process-img-wide">
+              <div className="fruh-process-img fruh-process-img-wide fruh-process-img-wide-midfi">
                 <img src={midfiWireframe} alt="Mid fidelity wireframe" />
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function FruhGenugPage() {
               <h3 className="fruh-process-caption fruh-process-caption-tr">
                 High Fidelity Mockup
               </h3>
-              <div className="fruh-process-img fruh-process-img-wide">
+              <div className="fruh-process-img fruh-process-img-wide fruh-process-img-wide-hifi">
                 <img src={hifiMockup} alt="High fidelity mockup" />
               </div>
             </div>

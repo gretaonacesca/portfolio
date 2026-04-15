@@ -171,30 +171,31 @@
 }
 
 .fjord-lowfi-gif-a {
-  left: 100px;
+  left: 200px;
   top: 300px;
   width: 300px;
 }
 
 .fjord-lowfi-gif-b {
-  left: 150px;
+  left: 100px;
   top: 600px;
   width: 300px;
 }
 
 .fjord-lowfi-gif-c {
   left: 0;
-  top: 350px;
+  top: 0px;
   width: 300px;
 }
 
 .fjord-process-img-wide {
   max-width: none;
   width: 100%;
+  height: 1700px;
 }
 
-.fjord-process > .fjord-process-item:nth-child(2) .fjord-process-img-wide {
-  height: 1550px;
+.fjord-process-img-hifi {
+  height: 1700px;
 }
 
 /* Branding */

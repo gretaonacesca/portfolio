@@ -295,8 +295,9 @@
 }
 
 .fruh-lowfi-gif-a {
-  left: 100px;
-  top: 600px;
+  left: 0px;
+  top: 0px;
+  width: 300px;
   border-radius: 0;
 }
 
@@ -309,13 +310,20 @@
 
 .fruh-lowfi-gif-c {
   left: 0px;
-  top: 0px;
+  top: 591px;
   width: 300px;
 }
 
 .fruh-process-img-wide {
   max-width: 1216px;
+}
+
+.fruh-process-img-wide-midfi {
   height: 850px;
+}
+
+.fruh-process-img-wide-hifi {
+  height: 1464px;
 }
 
 /* Bottom sections */

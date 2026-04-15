@@ -122,7 +122,7 @@ export default function FjordFreightPage() {
 
           <div className="fjord-process-item">
             <h3 className="fjord-process-label">High Fidelity Mockup</h3>
-            <div className="fjord-process-img fjord-process-img-wide">
+            <div className="fjord-process-img fjord-process-img-wide fjord-process-img-hifi">
               <img src={hifiMockup} alt="High fidelity mockup" />
             </div>
           </div>

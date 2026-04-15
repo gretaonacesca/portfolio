@@ -40,7 +40,7 @@ export default function HomePage() {
           <span className="bento-stat-label">fluff</span>
         </div>
 
-        <a href="mailto:greta@example.com" className="bento-card bento-nav bento-contact">
+        <a href="mailto:greta.on.a.cesca@gmail.com" className="bento-card bento-nav bento-contact">
           contact
         </a>
 
